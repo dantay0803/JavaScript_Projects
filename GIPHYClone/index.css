@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.headerButton {
+  background-color: #6a61ff;
+  border: none;
+  height: 35;
+  width: 75;
+  font-weight: 700;
+  color: white;
+}
