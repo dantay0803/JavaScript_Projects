@@ -1,12 +1,8 @@
-add in randomly changing search box placeholder text
-Style top header
 Make pages for specific categories in header - https://giphy.com/reactions
 Make page for GIF details - https://giphy.com/gifs/kimsconvenience-kc-kims-convenience-303-BzqJPH87Pu3AqziFB3
 Implement scroll to update on full detail gif page
 
-
 URL = full detail page on giphy website
 slug = full detail page link on giphy website
-
 
 http://api.giphy.com/v1/gifs/pqtDnN2yQWuI9ASRC1?api_key=RWL04zIh7G9Nt13nujy6YLWKLw1nZ2Mt - Search by gif id
