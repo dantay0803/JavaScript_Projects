@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GIPHY | Search All the GIFs & Make Your Own Animated GIF</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header">
+        <img id="headerLogo" src="logo.png" alt="GIPHY Logo" />
+        <div class="headerItem"><p class="headerBorder">Reactions</p></div>
+        <div class="headerItem"><p class="headerBorder">Entertainment</p></div>
+        <div class="headerItem"><p class="headerBorder">Sports</p></div>
+        <div class="headerItem"><p class="headerBorder">Stickers</p></div>
+        <div class="headerItem"><p class="headerBorder">Artists</p></div>
+        <div class="headerItem">
+          <i
+            class="fas fa-ellipsis-v headerBorder"
+            style="color: white; padding-top: 2px;"
+          ></i>
+        </div>
+        <button class="headerItem headerButton" id="upload">Upload</button>
+      </div>
+
+      <div id="homeSearch">
+        <input
+          id="homeSearchInput"
+          type="text"
+          placeholder="Search all the GIFs"
+        />
+        <a href="" id="homeSearchButton"
+          ><i
+            class="fas fa-search fa-2x"
+            style="color: white; padding-top: 7.5px;"
+          ></i
+        ></a>
+      </div>
+
+      <div id="details">
+        <p>left bar: who posted it - their social media - stick around info</p>
+        <p>center: title - full gif - hashtags - other gifs</p>
+        <p>right bar: next/previous gif - links - share</p>
+      </div>
+    </div>
+    <script src="detailedGif.js" type="text/javascript"></script>
+  </body>
+</html>

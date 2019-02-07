@@ -55,7 +55,7 @@ body {
 #homeSearchButton {
   text-align: center;
   height: 50px;
-  background: linear-gradient(-115deg, purple, orange, orange, purple);
+  background: linear-gradient(-115deg, purple, orange, purple, orange, purple);
   background-size: 200% 200%;
   -webkit-animation: HomeSearchButtonGradient 5s ease infinite;
   -moz-animation: HomeSearchButtonGradient 5s ease infinite;
