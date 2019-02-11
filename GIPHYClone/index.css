@@ -100,13 +100,66 @@ body {
 
 #trendingCarousel {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  height: 100vw;
+  padding: 5px;
+  justify-content: space-evenly;
 }
 
-#trendingCarousel img {
-  flex: 2;
-  text-align: center;
+.trendingImg {
   margin: 5px;
+}
+
+#details {
+  padding-top: 50px;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+
+#detailsLeftBar {
+  grid-column: 1;
+}
+
+#userWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+#userAvatar {
+  width: 50px;
+  height: 50px;
+}
+
+#userProfileLink {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+
+#userDisplay {
+  font-weight: bold;
+}
+
+#userSource {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#detailsCenter {
+  grid-column: 2;
+}
+
+#relatedGifs {
+  max-width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#relatedGifs img {
+  width: 248;
+  height: 140;
 }
