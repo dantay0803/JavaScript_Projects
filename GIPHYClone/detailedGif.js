@@ -11,7 +11,7 @@ function getGif(gifId) {
       mainDetails(result.data);
 
       let searchTerm = result.data.slug.replace(result.data.id, "");
-      getRelatedGifs(searchTerm);
+      getRelatedGifs(searchTerm, gifId);
     })
     .catch(error => console.log(error));
 }
@@ -45,13 +45,15 @@ function mainDetails(data) {
   gifDisplay.src = data.images.original.url;
 }
 
-function getRelatedGifs(search) {
+function getRelatedGifs(search, gifId) {
   fetch(`http://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${search}`)
     .then(response => response.json())
     .then(result => {
       console.log(result);
       result.data.map(gif => {
-        return setUpRelatedGif(gif);
+        if (gifId !== gif.id) {
+          return setUpRelatedGif(gif);
+        }
       });
     })
     .catch(error => console.log(error));
