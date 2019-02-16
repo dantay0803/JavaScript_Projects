@@ -1,11 +1,9 @@
 Make pages for specific categories in header - https://giphy.com/reactions
 
-Implement scroll to update on full detail gif page
-
-Implement search bar
-
-Create search results page
+Implement scroll to update on full detail gif page and search result page
 
 update font and missing styles
 
-http://api.giphy.com/v1/gifs/pqtDnN2yQWuI9ASRC1?api_key=RWL04zIh7G9Nt13nujy6YLWKLw1nZ2Mt - Search by gif id
+swap stickers link in header bar with something else??
+
+implement upload

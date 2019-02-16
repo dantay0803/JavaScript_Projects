@@ -10,7 +10,7 @@ body {
 
 #header {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: 20px;
 }
 
@@ -103,6 +103,14 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   justify-content: space-evenly;
+}
+
+#resultsCarousel {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .trendingImg {
