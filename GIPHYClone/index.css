@@ -1,6 +1,8 @@
 body {
-  background-color: black;
+  background-color: #121212;
   color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 75%;
 }
 
 .wrapper {
@@ -49,7 +51,7 @@ body {
 #homeSearch input {
   height: 50px;
   text-indent: 10px;
-  font-size: 110%;
+  font-size: 140%;
 }
 
 #homeSearchButton {
@@ -103,6 +105,7 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 #resultsCarousel {
@@ -111,6 +114,7 @@ body {
   padding: 5px;
   justify-content: center;
   flex-flow: row wrap;
+  margin-bottom: 10px;
 }
 
 .trendingImg {
@@ -131,8 +135,11 @@ body {
 
 #userWrap {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: left;
+  overflow-wrap: break-word;
 }
 
 #userAvatar {
@@ -148,6 +155,10 @@ body {
 
 #userDisplay {
   font-weight: bold;
+}
+
+#userSourceTitle {
+  color: #b2b2b2;
 }
 
 #userSource {
@@ -170,4 +181,35 @@ body {
 #relatedGifs img {
   width: 248;
   height: 140;
+}
+
+#gifTitle {
+  font-size: 115%;
+  color: #b2b2b2;
+  padding-bottom: 10px;
+}
+
+#userAvata {
+  position: absolute;
+  float: left;
+}
+
+#userProfileLink {
+  position: absolute;
+  overflow-wrap: break-word;
+  margin-left: 50px;
+  font-size: 115%;
+}
+
+#searchTitle {
+  font-size: 2rem;
+}
+
+#searchDetailWrapper {
+  padding-bottom: 10px;
+}
+
+#gifCount {
+  padding-left: 5px;
+  color: #b2b2b2;
 }

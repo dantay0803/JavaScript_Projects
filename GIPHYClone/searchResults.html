@@ -6,6 +6,33 @@
     <title>GIPHY | Search All the GIFs & Make Your Own Animated GIF</title>
 
     <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:800"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -20,7 +47,7 @@
         <div class="headerItem"><p class="headerBorder">Reactions</p></div>
         <div class="headerItem"><p class="headerBorder">Entertainment</p></div>
         <div class="headerItem"><p class="headerBorder">Sports</p></div>
-        <div class="headerItem"><p class="headerBorder">Stickers</p></div>
+        <div class="headerItem"><p class="headerBorder">Comics</p></div>
         <div class="headerItem"><p class="headerBorder">Artists</p></div>
         <button class="headerItem headerButton" id="upload">Upload</button>
       </div>
@@ -40,8 +67,10 @@
       </div>
 
       <div id="trending">
-        <h1 id="searchTitle">Search Text to lower case</h1>
-        <p>GIF's: <strong id="gifCount"></strong></p>
+        <div id="searchDetailWrapper">
+          <span id="searchTitle">Search Text to lower case</span>
+          <span id="gifCount"></span>
+        </div>
 
         <div id="resultsCarousel"></div>
       </div>
