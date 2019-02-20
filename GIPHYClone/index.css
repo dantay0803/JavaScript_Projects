@@ -25,13 +25,14 @@ body {
   text-align: center;
   align-self: center;
   justify-self: center;
-}
-
-.headerBorder {
-  width: 100%;
   border-bottom: 5px solid;
   border-image-source: linear-gradient(90deg, #01cbff, #dd44be);
   border-image-slice: 10;
+}
+
+.headerItem a {
+  color: white;
+  text-decoration: none;
 }
 
 .headerButton {

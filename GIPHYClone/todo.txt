@@ -1,5 +1,3 @@
-Make pages for specific categories in header
-
 implement upload
 
 animate search box text change
