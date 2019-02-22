@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-  width: 1000px;
+  width: 1050px;
   margin: 0 auto;
 }
 
@@ -213,4 +213,67 @@ body {
 #gifCount {
   padding-left: 5px;
   color: #b2b2b2;
+}
+
+#uploadArea {
+  width: 100%;
+  text-align: center;
+  height: 500px;
+  background: linear-gradient(90deg, #2dabd5, #7859f1);
+}
+
+#uploadInstructions {
+  padding-top: 50px;
+  width: 40%;
+  padding-left: 30%;
+}
+
+#clickToUploadHolder {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-style: dashed;
+  border-color: white;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+}
+
+#clickToUploadHolderBackground {
+  background-color: white;
+  opacity: 0.2;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 490px;
+  height: 140px;
+}
+
+#clickToUploadHolderBackground:hover {
+  opacity: 0.4;
+}
+
+#clickToUploadHolder input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+}
+
+#clickToUploadInstructions {
+  text-align: left;
+  position: absolute;
+  width: 60%;
+  margin-left: 30%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+#clickToUploadIcon {
+  text-align: left;
+  position: absolute;
+  top: 10px;
+  left: 75px;
+  z-index: 1;
+  margin-top: 30px;
 }

@@ -46,35 +46,29 @@
         <a href="index.html"
           ><img id="headerLogo" src="logo.png" alt="GIPHY Logo"
         /></a>
-        <div class="headerItem">
-          <p class="headerBorder">
-            <a href="searchResults.html?search=reactions">Reactions</a>
+      </div>
+
+      <div id="uploadArea">
+        <div id="uploadInstructions">
+          <h1>UPLOAD</h1>
+          <p>
+            Upload your GIF collection to share on Facebook, Twitter, Instagram,
+            text message, email, and everywhere else.
           </p>
         </div>
-        <div class="headerItem">
-          <p class="headerBorder">
-            <a href="searchResults.html?search=entertainment">Entertainment</a>
-          </p>
+
+        <div id="clickToUploadHolder">
+          <div id="clickToUploadHolderBackground">
+            <input multiple="" type="file" accept="image/gif,video/*" />
+          </div>
+          <i class="fas fa-file-upload fa-5x" id="clickToUploadIcon"></i>
+          <div id="clickToUploadInstructions">
+            <p style="font-size: 150%;">BROWSE YOUR FILES</p>
+            <p>Upload one or more GIFs</p>
+          </div>
         </div>
-        <div class="headerItem">
-          <p class="headerBorder">
-            <a href="searchResults.html?search=sports">Sports</a>
-          </p>
-        </div>
-        <div class="headerItem">
-          <p class="headerBorder">
-            <a href="searchResults.html?search=comics">Comics</a>
-          </p>
-        </div>
-        <div class="headerItem">
-          <p class="headerBorder">
-            <a href="searchResults.html?search=artists">Artists</a>
-          </p>
-        </div>
-        <button class="headerItem headerButton" id="upload">Upload</button>
       </div>
     </div>
-    <script src="index.js" type="text/javascript"></script>
     <script src="upload.js" type="text/javascript"></script>
   </body>
 </html>
