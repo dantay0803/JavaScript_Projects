@@ -14,6 +14,8 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #headerLogo {
@@ -49,6 +51,26 @@ body {
   grid-template-columns: 950px 50px;
 }
 
+#searchInstructionsText {
+  position: absolute;
+  color: black;
+  opacity: 0.6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 150%;
+  margin-top: 15px;
+  margin-left: 10px;
+  animation: searchPlaceholderFade 5s linear infinite;
+}
+
+@keyframes searchPlaceholderFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #homeSearch input {
   height: 50px;
   text-indent: 10px;
@@ -56,6 +78,7 @@ body {
 }
 
 #homeSearchButton {
+  border: none;
   text-align: center;
   height: 50px;
   background: linear-gradient(-115deg, purple, orange, purple, orange, purple);
@@ -218,62 +241,116 @@ body {
 #uploadArea {
   width: 100%;
   text-align: center;
-  height: 500px;
+  height: 650px;
   background: linear-gradient(90deg, #2dabd5, #7859f1);
 }
 
 #uploadInstructions {
-  padding-top: 50px;
-  width: 40%;
+  padding-top: 20px;
+  width: 45%;
   padding-left: 30%;
 }
 
-#clickToUploadHolder {
-  margin-top: 20px;
-  margin-left: 20px;
-  border-style: dashed;
-  border-color: white;
-  width: 500px;
-  height: 150px;
-  position: absolute;
+#uploadInstructions p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 150%;
 }
 
-#clickToUploadHolderBackground {
+#uploadGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.uploadHolder {
+  border-style: dashed;
+  border-color: white;
+  width: 410px;
+  height: 170px;
+}
+
+.uploadHolderBackground {
   background-color: white;
   opacity: 0.2;
   margin-top: 5px;
   margin-left: 5px;
-  width: 490px;
-  height: 140px;
+  width: 400px;
+  height: 160px;
 }
 
-#clickToUploadHolderBackground:hover {
+.uploadHolderBackground:hover {
   opacity: 0.4;
 }
 
-#clickToUploadHolder input {
+.uploadHolder input {
   width: 100%;
   height: 100%;
   opacity: 0;
   position: relative;
 }
 
-#clickToUploadInstructions {
+.uploadIcon {
   text-align: left;
   position: absolute;
-  width: 60%;
-  margin-left: 30%;
   top: 0;
   left: 0;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 60px;
+}
+
+.UploadButtonInstructions {
+  text-align: left;
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  line-height: 5px;
+  margin-top: 60px;
+}
+
+#clickToUploadInstructions {
+  margin-left: 120px;
 }
 
 #clickToUploadIcon {
+  margin-left: 40px;
+}
+
+#dragToUploadInstructions {
+  margin-left: 540px;
+}
+
+#dragToUploadIcon {
+  margin-left: 460px;
+}
+
+#linkUpload {
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 800px;
+  height: 180px;
   position: absolute;
-  top: 10px;
-  left: 75px;
-  z-index: 1;
-  margin-top: 30px;
+  margin-top: 220px;
+  margin-left: 140px;
+}
+
+#linkUpload h2 {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+#linkUpload input {
+  margin-left: 30px;
+  width: 750px;
+  height: 40px;
+  text-indent: 10px;
+}
+
+.noHover {
+  pointer-events: none;
 }

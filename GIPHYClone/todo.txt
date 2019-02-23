@@ -1,3 +1,0 @@
-implement upload
-
-animate search box text change

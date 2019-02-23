@@ -57,15 +57,47 @@
           </p>
         </div>
 
-        <div id="clickToUploadHolder">
-          <div id="clickToUploadHolderBackground">
-            <input multiple="" type="file" accept="image/gif,video/*" />
+        <div id="uploadGrid">
+          <div class="uploadHolder">
+            <div class="uploadHolderBackground">
+              <input id="clickToUploadInput" type="file" accept="image/gif" />
+            </div>
+            <i
+              class="fas fa-file-upload fa-5x uploadIcon noHover"
+              id="clickToUploadIcon"
+            ></i>
+            <div
+              id="clickToUploadInstructions"
+              class="UploadButtonInstructions noHover"
+            >
+              <p style="font-size: 150%;">BROWSE YOUR FILES</p>
+              <p>Upload one or more GIFs</p>
+            </div>
           </div>
-          <i class="fas fa-file-upload fa-5x" id="clickToUploadIcon"></i>
-          <div id="clickToUploadInstructions">
-            <p style="font-size: 150%;">BROWSE YOUR FILES</p>
-            <p>Upload one or more GIFs</p>
+          <div class="uploadHolder">
+            <div class="uploadHolderBackground">
+              <input multiple="" type="file" accept="image/gif,video/*" />
+            </div>
+            <i
+              class="fas fa-vector-square fa-5x uploadIcon noHover"
+              id="dragToUploadIcon"
+            ></i>
+            <div
+              id="dragToUploadInstructions"
+              class="UploadButtonInstructions noHover"
+            >
+              <p style="font-size: 150%;">DRAG AND DROP GIFs</p>
+              <p>Drop them right here, right now.</p>
+            </div>
           </div>
+        </div>
+
+        <div id="linkUpload">
+          <h2>COPY AND PASTE ANY GIF URL</h2>
+          <input
+            type="text"
+            placeholder="Copy and paste video, GIF, or image URL"
+          />
         </div>
       </div>
     </div>

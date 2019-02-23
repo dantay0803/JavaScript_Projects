@@ -71,21 +71,23 @@
             <a href="searchResults.html?search=artists">Artists</a>
           </p>
         </div>
-        <button class="headerItem headerButton" id="upload">Upload</button>
+        <button
+          class="headerItem headerButton"
+          id="upload"
+          onclick="window.location.href='upload.html'"
+        >
+          Upload
+        </button>
       </div>
 
       <div id="homeSearch">
-        <input
-          id="homeSearchInput"
-          type="text"
-          placeholder="Search all the GIFs"
-        />
-        <a href="" id="homeSearchButton"
-          ><i
-            class="fas fa-search fa-2x"
-            style="color: white; padding-top: 7.5px;"
-          ></i
-        ></a>
+        <span id="searchInstructionsText" style="display: none;"
+          >Search all the GIFs</span
+        >
+        <input id="homeSearchInput" type="text" />
+        <button id="homeSearchButton" onclick="searchForGifs()">
+          <i class="fas fa-search fa-2x" style="color: white;"></i>
+        </button>
       </div>
 
       <div id="trending">
